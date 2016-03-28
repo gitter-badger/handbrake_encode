@@ -17,8 +17,8 @@ test:
     - sudo echo 'deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu precise main' >> /etc/apt/sources.list
     - sudo apt-get update
     - sudo apt-get -y install handbrake-cli
-    - which handbrake-cli
-    - sudo handbrake-cli --help
+    - which HandBrakeCLI
+    - sudo HandBrakeCLI --help
     
     
     
