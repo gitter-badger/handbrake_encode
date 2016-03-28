@@ -6,8 +6,12 @@ machine:
   timezone:
     Asia/Tokyo
 
+dependencies:
+  pre:
+    - chmod +x ./gradlew
+    - uname -r
+
 test:
   pre:
-    - uname -r
-    - export DEBIAN_FRONTEND=noninteractive
     - sudo apt-get update
+    
