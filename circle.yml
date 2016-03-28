@@ -1,0 +1,14 @@
+general:
+
+machine:
+  java:
+    version: openjdk7
+  timezone:
+    Asia/Tokyo
+
+dependencies:
+  post:
+    - export DEBIAN_FRONTEND=noninteractive
+    - sudo apt-get -y autoremove
+    - sudo apt-get update
+    - sudo apt-get -y install handbrake
