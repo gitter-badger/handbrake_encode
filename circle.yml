@@ -7,7 +7,7 @@ machine:
     Asia/Tokyo
 
 dependencies:
-  post:
+  pre:
     - export DEBIAN_FRONTEND=noninteractive
     - sudo apt-get -y autoremove
     - sudo apt-get update
