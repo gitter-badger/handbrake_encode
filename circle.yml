@@ -13,9 +13,8 @@ dependencies:
 
 test:
   pre:
-    - sudo su
-    - echo 'deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu precise main' >> /etc/apt/sources.list
-    - apt-get update
-    - apt-get install handbrake*
+    - sudo echo 'deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu precise main' >> /etc/apt/source.list
+    - sudo apt-get update
+    - sudo apt-get install handbrake*
     
     
