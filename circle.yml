@@ -19,7 +19,6 @@ test:
     - sudo apt-get -y install handbrake-cli
     - which HandBrakeCLI
     - sudo HandBrakeCLI --help
-        timeout: 180
     
     
     
