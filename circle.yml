@@ -1,4 +1,5 @@
 general:
+  artifacts:
 
 machine:
   java:
@@ -19,6 +20,7 @@ test:
     - sudo apt-get -y install handbrake-cli
     - which HandBrakeCLI
     - sudo HandBrakeCLI --help
+    - pwd
     
     
     
