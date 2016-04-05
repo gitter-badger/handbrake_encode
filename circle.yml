@@ -19,7 +19,9 @@ test:
     - sudo apt-get update
     - sudo apt-get -y install handbrake-cli
     - which HandBrakeCLI
-    - sudo HandBrakeCLI --help
+    - cd ~
+    - wget http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_30mb.mp4 -o test.mp4
+    - HandBrakeCLI -i test.mp4 -o encoded.mp4
     - pwd
     
     
