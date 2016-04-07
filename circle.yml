@@ -1,5 +1,6 @@
 general:
   artifacts:
+    - "~/encoded.mp4"
 
 machine:
   java:
@@ -21,7 +22,7 @@ test:
     - HandBrakeCLI --help
     - cd ~
     - wget http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_30mb.mp4
-    - HandBrakeCLI -e x264 -O -f mp4 --cpu 12 -i big_buck_bunny_480p_30mb.mp4  -o encoded.mp4
+    - HandBrakeCLI -e x264 -O -f mp4 -i big_buck_bunny_480p_30mb.mp4  -o encoded.mp4
     - pwd
     
     
